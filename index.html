@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-registre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav_logo">Login-register</a>
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="" class="nav-link">Home</a>
+                    <a href=""class="nav-link">Produit</a>
+                    <a href="" class="nav-link">Services</a>
+                    <a href="" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <button class="button" id="form-open">login</button>
+        </nav>
+    </header>
+    <!-- Home -->
+
+    <section class="home">
+        <div class="form_container">
+            <i class="uil uil-times form_close">x</i>
+
+            <!-- Formulaire -->
+            <div class="form login-form">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="input-box">
+                        <input type="email" placeholder="Renseigner votre email" required>
+                        <i class="uil uil-envelope-alt"></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" placeholder="Tapez votre mot de passe..." required>
+                        <i class="uil uil-lock"></i>
+                    </div>
+
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check">
+                            <label for="check">Se souvenir de moi</label>
+                        </span>
+                        <a href="" class="forget_pwd">Mots de passe oublié ?</a>
+                    </div>
+                    <button type="text" class="button">Se Connecter</button>
+
+                    <div class="login-signup">
+                        J'ai pas de compte <a href="#" id="signup">Créer un compte</a>.
+                    </div>
+                </form>
+            </div>
+
+            <!-- S'enregistrer -->
+            <div class="form signup-form">
+                <form action="">
+                    <h2>signup</h2>
+                    <div class="input-box">
+                        <input type="email" placeholder="Inscrire votre email" required>
+                        <i class="uil uil-envelope-alt"></i>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" placeholder="Inscrire votre mot de passe..." required>
+                        <i class="uil uil-lock"></i>
+                    </div>
+
+                    <div class="input-box">
+                    <input type="password" placeholder="Inscrire votre mot de passe..." required>
+                    <i class="uil uil-lock"></i>
+                </div>
+
+                    <button type="text" class="button">S'Inscrire</button>
+
+                    <div class="login-signup">
+                        J'ai déja de compte <a href="#" id="login">Se Connecter</a>.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="app.js"></script>
+</html>
